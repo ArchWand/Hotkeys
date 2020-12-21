@@ -81,7 +81,27 @@ Browser_Favorites & NumpadIns:: ; Works when NumLock is off
 Return
 
 
-; f2 mail, passwords
+; f2 mail, 
+~f2 & 1::
+	ClipSaved := ClipboardAll ; saves clipboard to temporary variable
+	Clipboard := "robert.zhu@k12.wcsdny.org" ; loads email
+	Send ^v ; pastes email
+	Sleep 100 ; ensure that email has been pasted
+	Clipboard := ClipSaved ; restore clipboard
+	ClipSaved := "" ; wipe temp variable
+Return
+
+~f2 & 2::
+	ClipSaved := ClipboardAll
+	Clipboard := "robert.zhu06@gmail.com"
+	Send ^v
+	Sleep 100
+	Clipboard := ClipSaved
+	ClipSaved := ""
+Return
+
+
+;f2 passwords
 
 
 
