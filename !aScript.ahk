@@ -1,19 +1,22 @@
-// Initializes some performance settings
+; Initializes some performance settings
 #NoEnv
 #Warn
 SendMode Input
 SetWorkingDir %A_ScriptDir%
 
-// calculator
+SoundBeep ; signals start
 
 
-// star files
+; calculator
 
 
-// f2 mail, passwords
+; star files
 
 
-// End script 
+; f2 mail, passwords
+
+
+; End script 
 Browser_Favorites & Pause::
 SoundPlay *16
 MsgBox, 4369,, Quit !Script.ahk?
