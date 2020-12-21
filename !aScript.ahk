@@ -64,6 +64,21 @@ Browser_Favorites & NumpadIns:: ; Works when NumLock is off
 	}
 Return
 
+; user-switch
+Browser_Favorites::
+	ClipSaved := ClipboardAll
+	PreviousClip := Clipboard
+	SendInput ^l^c
+	Sleep 100
+	if PreviousClip = Clipboard
+		Return
+	Clipboard := "hey there delilah"
+	SendInput ^v
+	Sleep 100
+	Clipboard := ClipSaved
+	ClipSaved := ""
+Return
+
 
 ; f2 mail, passwords
 
