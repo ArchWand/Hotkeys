@@ -7,8 +7,28 @@ SetWorkingDir %A_ScriptDir%
 
 SoundBeep ; signals start
 
-; calculator
 
+; pin: Sets the active window to be always on top.
+^#a:: WinSet, AlwaysOnTop, , A
+
+
+; calculator
+Launch_App2:: ; Main hotkey — Calculator button
+	if WinExist("Calculator")
+	{ ; tests if there is an open instance of calculator
+		WinActivate, Calculator
+	} else {
+		Run calc
+	}
+Return 
+
+; Holding control always launchs calculator.
+^Launch_App2:: Run calc 
+
+; Ctrl+w closes calculator
+#ifWinActive Calculator
+	~^w:: WinClose, A
+#ifWinActive
 
 
 ; star files
@@ -80,7 +100,27 @@ Browser_Favorites::
 Return
 
 
-; f2 mail, passwords
+; f2 mail, 
+~f2 & 1::
+	ClipSaved := ClipboardAll ; saves clipboard to temporary variable
+	Clipboard := "robert.zhu@k12.wcsdny.org" ; loads email
+	Send ^v ; pastes email
+	Sleep 100 ; ensure that email has been pasted
+	Clipboard := ClipSaved ; restore clipboard
+	ClipSaved := "" ; wipe temp variable
+Return
+
+~f2 & 2::
+	ClipSaved := ClipboardAll
+	Clipboard := "robert.zhu06@gmail.com"
+	Send ^v
+	Sleep 100
+	Clipboard := ClipSaved
+	ClipSaved := ""
+Return
+
+
+;f2 passwords
 
 
 
