@@ -18,17 +18,17 @@ Launch_App2:: ; Main hotkey — Calculator button
 	{ ; tests if there is an open instance of calculator
 		WinActivate, Calculator
 	} else {
-	^Launch_App2:: ; Holding control launchs calculator regardless.
 		Run calc
-	Return
 	}
-Return
+Return 
 
-~^w:: ; Ctrl+w closes calculator
-if WinActive("Calculator") {
-	WinClose, A
-}
-Return
+; Holding control always launchs calculator.
+^Launch_App2:: Run calc 
+
+; Ctrl+w closes calculator
+#ifWinActive Calculator
+	~^w:: WinClose, A
+#ifWinActive
 
 
 ; star files
