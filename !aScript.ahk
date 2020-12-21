@@ -7,6 +7,11 @@ SetWorkingDir %A_ScriptDir%
 
 SoundBeep ; signals start
 
+
+; pin: Sets the active window to be always on top.
+^#a:: WinSet, AlwaysOnTop, , A
+
+
 ; calculator
 Launch_App2:: ; Main hotkey — Calculator button
 	if WinExist("Calculator")
@@ -24,7 +29,6 @@ if WinActive("Calculator") {
 	WinClose, A
 }
 Return
-
 
 
 ; star files
