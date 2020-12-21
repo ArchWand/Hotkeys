@@ -47,7 +47,11 @@ if (ErrorLevel = "Match") {
 		SendInput %input%
 		Return
 	}
+<<<<<<< Updated upstream
 } else if (ErrorLevel = "Timeout" || ErrorLevel = "Endkey:Enter") {
+=======
+} else if (ErrorLevel = "Timeout" || ErrorLevel = "EndKey:Enter") {
+>>>>>>> Stashed changes
 	Run C:\Users\bertz\Documents\​​School
 }
 Return
