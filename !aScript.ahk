@@ -8,6 +8,22 @@ SetWorkingDir %A_ScriptDir%
 SoundBeep ; signals start
 
 ; calculator
+Launch_App2:: ; Main hotkey — Calculator button
+	if WinExist("Calculator")
+	{ ; tests if there is an open instance of calculator
+		WinActivate, Calculator
+	} else {
+	^Launch_App2:: ; Holding control launchs calculator regardless.
+		Run calc
+	Return
+	}
+Return
+
+~^w:: ; Ctrl+w closes calculator
+if WinActive("Calculator") {
+	WinClose, A
+}
+Return
 
 
 
