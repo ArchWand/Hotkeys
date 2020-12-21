@@ -47,7 +47,7 @@ if (ErrorLevel = "Match") {
 		SendInput %input%
 		Return
 	}
-}else if (ErrorLevel = "Timeout") {
+} else if (ErrorLevel = "Timeout") {
 	Run C:\Users\bertz\Documents\​​School
 }
 Return
