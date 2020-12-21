@@ -1,0 +1,2 @@
+# Hotkeys
+AutoHotkey script
