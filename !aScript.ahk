@@ -13,7 +13,7 @@ SoundBeep ; signals start
 
 ; star files
 Browser_Favorites & Numpad0::
-Input, input, L1 T5, ,1,2,3,4,5,6,7,8,9
+Input, input, L1 T5, {Enter},1,2,3,4,5,6,7,8,9
 if (ErrorLevel = "Match") {
 	switch input {
 	case 1:
@@ -47,7 +47,7 @@ if (ErrorLevel = "Match") {
 		SendInput %input%
 		Return
 	}
-} else if (ErrorLevel = "Timeout") {
+} else if (ErrorLevel = "Timeout" || ErrorLevel = "Endkey:Enter") {
 	Run C:\Users\bertz\Documents\​​School
 }
 Return
