@@ -11,6 +11,8 @@ SoundBeep ; signals start
 #Include star-files.ahk
 #Include star-switcher.ahk
 #Include f2-email.ahk
+#Include easy-menu.ahk
+
 
 ; End script 
 Browser_Favorites & Pause::
