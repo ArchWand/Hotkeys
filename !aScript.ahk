@@ -32,9 +32,6 @@ Return
 
 
 ; star files
-/*
-Open school folders using a keyboard shortcut.
-*/
 Browser_Favorites & Numpad0::	; Main hotkey
 Browser_Favorites & NumpadIns:: ; Works when NumLock is off
 	Input, input, L1 T5, {Enter},1,2,3,4,5,6,7,8,9
@@ -75,16 +72,16 @@ Browser_Favorites & NumpadIns:: ; Works when NumLock is off
 			Return
 		}
 	} else if (ErrorLevel = "Timeout" || ErrorLevel = "Endkey:Enter")
-	{ ; Opens the main folder if you either wait too long
-		; or hit the enter key instead of a number.
+	{ ; opens main folder given conditions
 		Run C:\Users\bertz\Documents\​​School
 	} else
-	{ ; If a letter key or such is pressed, it will still show up.
+	{ ; passes keys through
 		SendInput %input%
 	}
 Return
 
-; user-switch
+
+; star switcher
 Browser_Favorites::
 	; check if in a browser
 	if !(WinActive("ahk_exe chrome.exe") || WinActive("ahk_exe firefox.exe") || WinActive("ahk_exe iexplore.exe") || WinActive("ahk_exe msedge.exe"))
