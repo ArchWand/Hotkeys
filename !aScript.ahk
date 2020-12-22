@@ -84,29 +84,67 @@ Browser_Favorites & NumpadIns:: ; Works when NumLock is off
 	}
 Return
 
+; user-switch
+Browser_Favorites::
+	; check if in a browser
+	if !(WinActive("ahk_exe chrome.exe") || WinActive("ahk_exe firefox.exe") || WinActive("ahk_exe iexplore.exe") || WinActive("ahk_exe msedge.exe"))
+		Return
+	; Clipboard replacement
+	TempClip := ClipboardAll
+		PreviousClip := Clipboard
+		SendInput ^l
+		  Sleep 200
+		SendInput ^c
+		  Sleep 100
+		if PreviousClip = Clipboard ; check that copying was successful
+			Return
+		
+		; process what to do with the string
+		if InStr(Clipboard, ".google.com") {
+			if InStr(Clipboard, "/u/0/") {
+				Clipboard := StrReplace(Clipboard, "/u/0/", "/u/1/")
+			} else if InStr(Clipboard, "/u/1/") {
+				Clipboard := StrReplace(Clipboard, "/u/1/", "/u/0/")
+			} else if InStr(Clipboard, "?authuser=0") {
+				Clipboard := StrReplace(Clipboard, "?authuser=0", "?authuser=1")
+			} else if InStr(Clipboard, "?authuser=1") {
+				Clipboard := StrReplace(Clipboard, "?authuser=1", "?authuser=0")
+			} else if InStr(Clipboard, "hangouts.google.com") {
+				Clipboard .= "u/1/"
+			}
+		}
+		SendInput ^v
+		  Sleep 200
+		SendInput {Enter}
+		  Sleep 100
+	; Clipboard replacement
+	Clipboard := TempClip
+	TempClip := ""
+Return
+
 
 ; f2 mail, 
 ~f2 & 1::
-	ClipSaved := ClipboardAll ; saves clipboard to temporary variable
-	Clipboard := "robert.zhu@k12.wcsdny.org" ; loads email
-	Send ^v ; pastes email
-	Sleep 100 ; ensure that email has been pasted
-	Clipboard := ClipSaved ; restore clipboard
-	ClipSaved := "" ; wipe temp variable
+	TempClip := ClipboardAll ; saves clipboard to temporary variable
+		Clipboard := "robert.zhu@k12.wcsdny.org" ; loads email
+		Send ^v ; pastes email
+		  Sleep 100 ; ensure that email has been pasted
+	Clipboard := TempClip ; restore clipboard
+	TempClip := "" ; wipe temp variable
 Return
 
 ~f2 & 2::
-	ClipSaved := ClipboardAll
-	Clipboard := "robert.zhu06@gmail.com"
-	Send ^v
-	Sleep 100
-	Clipboard := ClipSaved
-	ClipSaved := ""
+	TempClip := ClipboardAll
+		Clipboard := "robert.zhu06@gmail.com"
+		Send ^v
+		  Sleep 100
+	Clipboard := TempClip
+	TempClip := ""
 Return
 
 
 ;f2 passwords
-
+/*  There's nothing here.  */
 
 
 ; End script 
