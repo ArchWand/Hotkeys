@@ -112,11 +112,11 @@ Browser_Favorites::
 			} else if InStr(Clipboard, "hangouts.google.com") {
 				Clipboard .= "u/1/"
 			}
-		}
 		SendInput ^v
 		  Sleep 200
 		SendInput {Enter}
 		  Sleep 100
+		}
 	; Clipboard replacement
 	Clipboard := TempClip
 	TempClip := ""
