@@ -5,4 +5,4 @@
 	Maps scroll lock to the menu key (application key) for easier right clicking.
 */
 
-ScrollLock::Menu
+ScrollLock::AppsKey
