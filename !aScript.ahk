@@ -93,7 +93,7 @@ Browser_Favorites::
 	TempClip := ClipboardAll
 		PreviousClip := Clipboard
 		SendInput ^l
-		  Sleep 150
+		  Sleep 200
 		SendInput ^c
 		  Sleep 100
 		if PreviousClip = Clipboard ; check that copying was successful
