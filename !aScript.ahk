@@ -111,6 +111,11 @@ Browser_Favorites::
 				Clipboard := StrReplace(Clipboard, "?authuser=1", "?authuser=0")
 			} else if InStr(Clipboard, "hangouts.google.com") {
 				Clipboard .= "u/1/"
+			} else if InStr(Clipboard, "docs.google.com") {
+				InputBox, SwitchTo, Star Switcher, Enter the user to switch to.,,240,148,,,,7,0
+				if (ErrorLevel = 1 || ErrorLevel = 2)
+					Return
+				Clipboard := StrReplace(Clipboard, "/d/", "/u/" . SwitchTo . "/d/")
 			}
 		SendInput ^v
 		  Sleep 200
