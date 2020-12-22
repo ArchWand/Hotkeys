@@ -93,7 +93,7 @@ Browser_Favorites::
 	TempClip := ClipboardAll
 		PreviousClip := Clipboard
 		SendInput ^l
-		  Sleep 200
+		  Sleep 150
 		SendInput ^c
 		  Sleep 100
 		if PreviousClip = Clipboard ; check that copying was successful
@@ -112,11 +112,11 @@ Browser_Favorites::
 			} else if InStr(Clipboard, "hangouts.google.com") {
 				Clipboard .= "u/1/"
 			}
-		}
 		SendInput ^v
 		  Sleep 200
 		SendInput {Enter}
 		  Sleep 100
+		}
 	; Clipboard replacement
 	Clipboard := TempClip
 	TempClip := ""
