@@ -1,4 +1,9 @@
-
+/*
+	AHK Shortcuts by Arcwand06
+	Version 2.0
+	
+	Adds several shortcuts. Shortcuts are based on scripts in the same folder.
+*/
 #NoEnv
 #SingleInstance Force
 SendMode Input
@@ -12,6 +17,7 @@ SoundBeep ; signals start
 #Include pin.ahk
 #Include star-files.ahk
 #Include star-switcher.ahk
+#Include visualToggle.ahk
 
 
 ; End script 
