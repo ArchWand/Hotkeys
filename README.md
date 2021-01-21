@@ -30,12 +30,15 @@ Pressing `f2`+`1` or `f2`+`2` will paste in an email address. This can be change
 ### star-run
 `Star`+`Numpad0`, followed by a number opens folders for school in file explorer. This is specific to my hard drive; you can modify it to suit your needs by changing the associated file.
 
+**NOTE:** Requires `Run` command. Incompatible with `star-switcher.ahk`.
+
 ### star-switcher
 Pressing the star key (`bookmarks`) in a browser on a google page will switch to a different google user.  
 This makes it easy to switch between two google users.
 
 **NOTE:** this may not work as intended on certain google pages. Furthermore, this will not work on any other accounts — only google accounts.  
-This will not work with more than two accounts. If you have more than two accounts signed in, it will only switch between the first two.
+This will not work with more than two accounts. If you have more than two accounts signed in, it will only switch between the first two.  
+Incompatible with `star-run.ahk`.
 
 ### visualToggle
 Adds a visual indicator for the `caps lock` key. This shows as a small box in the corner of the screen when caps lock is on.
