@@ -4,6 +4,8 @@
 	
 	Pressing the star key and a particular numberpad key will run something as if from the command line, determined by a file. Commands to be run can include things like paths of files or folders, websites, etc.
 */
+#NoEnv
+#SingleInstance Force
 
 RunFilePath := "C:\Users\bertz\Documents\​none\star-run.txt"
 ZeroCmd := []

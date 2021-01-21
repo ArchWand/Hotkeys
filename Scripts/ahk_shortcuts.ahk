@@ -11,12 +11,11 @@ SetWorkingDir %A_ScriptDir%
 
 SoundBeep ; signals start
 
+Run star-run.ahk
 #Include calc.ahk
 #Include easy-menu.ahk
 #Include f2-email.ahk
 #Include pin.ahk
-#Include star-run.ahk
-#Include star-switcher.ahk
 #Include visualToggle.ahk
 
 
