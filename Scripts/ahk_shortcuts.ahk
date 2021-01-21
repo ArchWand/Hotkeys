@@ -15,7 +15,7 @@ SoundBeep ; signals start
 #Include easy-menu.ahk
 #Include f2-email.ahk
 #Include pin.ahk
-#Include star-files.ahk
+#Include star-run.ahk
 #Include star-switcher.ahk
 #Include visualToggle.ahk
 
