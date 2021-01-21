@@ -1,4 +1,8 @@
 # Changelog
+
+### 1.1.0 | 21 January 2021
+Completely changed the way `star-file` works. It's been renamed to `star-run`, and now pulls from a text file instead of an internal switch.
+
 ### 1.0.0 | 26 December 2020
 Created the changelog.
 
