@@ -28,7 +28,7 @@ Pressing `f2`+`1` or `f2`+`2` will paste in an email address. This can be change
 `Ctrl`+`Win`+`A` will toggle the always on top status of the active window. This means that clicking away won't hide it.
 
 ### star-files
-`Star`+`Numpad0`, followed by a number opens folders for school in file explorer. This is specific to my hard drive; you can modify it to suit your needs by changing what's run in the switch statement in `star-files.ahk`.
+`Star`+`Numpad0`, followed by a number opens folders for school in file explorer. This is specific to my hard drive; you can modify it to suit your needs by changing the associated file.
 
 ### star-switcher
 Pressing the star key (`bookmarks`) in a browser on a google page will switch to a different google user.  
