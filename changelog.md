@@ -1,4 +1,7 @@
 # Changelog
+### 1.2.0 | 01 February 2021
+Added a hotkey for date and time. Uses standard spreadsheet hotkeys.
+
 ### 1.1.2 | 01 February 2021
 Restructured `star-run` and `f2-email`. No difference in usage, but `star-run` is now better prepared for future updates. Fixed bug with `ahk_shortcuts` in which it was not possible to exit; close button has been remapped to double-tap `pause/break`.
 
