@@ -1,4 +1,7 @@
 # Changelog
+### 1.1.2 | 01 February 2021
+Restructured `star-run` and `f2-email`. No difference in usage, but `star-run` is now better prepared for future updates. Fixed bug with `ahk_shortcuts` in which it was not possible to exit; close button has been remapped to double-tap `pause/break`.
+
 ### 1.1.1 | 21 January 2021
 Fixed how `star-run` is executed, using a `Run` instead of `#Include`. Also removed `star-switcher` due to its incompatibility with `star-run`.
 
