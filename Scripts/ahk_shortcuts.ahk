@@ -14,6 +14,7 @@ SoundBeep ; signals start
 
 Run star-run.ahk
 #Include calc.ahk
+#Include date&time.ahk
 #Include easy-menu.ahk
 #Include f2-email.ahk
 #Include pin.ahk
