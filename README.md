@@ -12,11 +12,14 @@ Download the files, and make sure you have AutoHotkey installed. If you installe
 If you want this to run automatically at startup, right click it in file explorer and select create shortcut. Press win+R to bring up the run prompt, and type `shell:startup`. Move the shortcut into there.
 
 ## List of Shortcuts
-### Calc
+### calc
 ***Modifies the behavior of the Windows calculator app.***  
 Pressing the `calculator` key (calc) on the keyboard will now first attempt to activate any existing instances of calculator, instead of creating a new instance.  
 `Ctrl`+`calc` creates a new instance of calculator, regardless of whether or not there are any already open.  
 When in the calculator app, `ctrl`+`w` will close it.  
+
+### date&time
+Inserts the date in DD Month YYYY format when you press `ctrl`+`;`. Inserts the time in HH:MM:SS 24h format when you press `ctrl`+`shift`+`;`. These are the same hotkeys as most spreadsheets.
 
 ### easy-menu
 Maps the `scroll lock` to the menu key/apps key (application key) for easier right clicking.
