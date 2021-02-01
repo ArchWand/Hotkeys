@@ -8,6 +8,7 @@
 #SingleInstance Force
 SendMode Input
 SetWorkingDir %A_ScriptDir%
+DetectHiddenWindows, On 
 
 SoundBeep ; signals start
 
@@ -20,10 +21,18 @@ Run star-run.ahk
 
 
 ; End script 
-Browser_Favorites & Pause::
+Pause::
+KeyWait, Pause, U
+KeyWait, Pause, D, T0.2
+If (ErrorLevel == 1) {
+	Return
+}
 SoundPlay *16
 MsgBox, 0x1111,, Quit !Script.ahk?
 ifMsgBox OK
+{
+	WinClose, %A_ScriptDir%\star-run.ahk ahk_class AutoHotkey
 	ExitApp
+}
 else
 	Return
