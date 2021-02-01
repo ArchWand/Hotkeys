@@ -6,19 +6,18 @@
 */
 
 ~f2 & 1::
-	TempClip := ClipboardAll ; saves clipboard to temporary variable
-		Clipboard := "robert.zhu@k12.wcsdny.org" ; loads email
-		Send ^v ; pastes email
-		  Sleep 100 ; ensure that email has been pasted
-	Clipboard := TempClip ; restore clipboard
-	TempClip := "" ; wipe temp variable
-Return
+email = robert.zhu@k12.wcsdny.org
+Goto, Paste
 
 ~f2 & 2::
-	TempClip := ClipboardAll
-		Clipboard := "robert.zhu06@gmail.com"
-		Send ^v
-		  Sleep 100
-	Clipboard := TempClip
-	TempClip := ""
+email = robert.zhu06@gmail.com
+Goto, Paste
+
+Paste:
+	TempClip := ClipboardAll; saves clipboard to temporary variable
+		Clipboard := email	; loads email
+		Send ^v				; pastes email
+		  Sleep 100 		; ensure that email has been pasted
+	Clipboard := TempClip 	; restore clipboard
+	TempClip := "" 			; wipe temp variable
 Return
