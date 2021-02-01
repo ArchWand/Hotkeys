@@ -14,7 +14,7 @@ email = robert.zhu06@gmail.com
 Goto, Paste
 
 Paste:
-	TempClip := ClipboardAll; saves clipboard to temporary variable
+	TempClip := ClipboardAll ; saves clipboard to temporary variable
 		Clipboard := email	; loads email
 		Send ^v				; pastes email
 		  Sleep 100 		; ensure that email has been pasted
