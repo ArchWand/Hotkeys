@@ -75,7 +75,6 @@ str := ""
 					emoji = zero
 				else if (floor(mod(i, 10000000000) / 1000000000) = 3)
 					emoji = o
-				MsgBox % floor(mod(i, 10000000000) / 1000000000)
 				i += 1000000000
 			case "p":
 				if (floor(mod(i, 100000000000) / 10000000000) = 1)
