@@ -100,9 +100,9 @@ str := ""
 				i += 100000000000000
 		}
 		Send, {Esc}{Esc}f^a{Backspace}
-		Sleep, 300
+		Sleep, 50
 		Send, +=:%emoji%:{Enter}
-		Sleep, 800
+		Sleep, 150
 	}
 Return
 
