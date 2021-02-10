@@ -21,6 +21,10 @@ When in the calculator app, `ctrl`+`w` will close it.
 ### date&time
 Inserts the date in DD Month YYYY format when you press `ctrl`+`;`. Inserts the time in HH:MM:SS 24h format when you press `ctrl`+`shift`+`;`. These are the same hotkeys as most spreadsheets.
 
+### discord
+Copy some text to the clipboard, then press `ctrl`+`d` to paste it as emojis. Alternatively, press `ctrl`+`t` to react to the last message.  
+When using `ctrl`+`d`, capital `A`, `B`, and `O` will cause the letters to be red.
+
 ### easy-menu
 Maps the `scroll lock` to the menu key/apps key (application key) for easier right clicking.
 
