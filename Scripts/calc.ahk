@@ -10,7 +10,7 @@
 	
 	When in the calculator app, ctrl+w will close it.
 */
-
+DetectHiddenWindows, Off
 
 Launch_App2::
 	if WinExist("Calculator")
@@ -23,7 +23,7 @@ Return
 
 
 ; Pressing ctrl and the calc key creates a new calc.
-^Launch_App2:: Run calc 
+^Launch_App2:: Run calc
 
 
 ; Ctrl+w closes calculator

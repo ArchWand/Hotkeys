@@ -1,5 +1,8 @@
 # Changelog
 ### 1.3.1 | 10 February 2021
+Fixed a bug where `calc.ahk would look at other virtual desktops to check for open calculators.
+
+### 1.3.0 | 10 February 2021
 Added discord text keys, with code from @DarkNinja2462.
 
 ### 1.2.0 | 01 February 2021
