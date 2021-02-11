@@ -102,7 +102,7 @@ str := ""
 		Send, {Esc}{Esc}f^a{Backspace}
 		Sleep, 50
 		Send, +=:%emoji%:{Enter}
-		Sleep, 150
+		Sleep, 1200
 	}
 Return
 
