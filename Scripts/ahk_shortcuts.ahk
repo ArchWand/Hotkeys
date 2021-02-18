@@ -12,12 +12,13 @@ DetectHiddenWindows, On
 
 SoundBeep ; signals start
 
-Run star-run.ahk
+Run file-run.ahk
 #Include calc.ahk
 #Include date&time.ahk
 #Include discord.ahk
 #Include easy-menu.ahk
 #Include f2-email.ahk
+#Include media_card.ahk
 #Include pin.ahk
 #Include visualToggle.ahk
 
