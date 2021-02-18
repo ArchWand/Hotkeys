@@ -2,9 +2,8 @@
 	Star-Run by Arcwand06
 	Version 2.0
 	
-	Pressing the star key and a particular numberpad key will run something as if from the command line, determined by a file. Commands to be run can include things like paths of files or folders, websites, etc.
+	Pressing ctrl and alt and a particular numberpad key will run something as if from the command line, determined by a file. Commands to be run can include things like paths of files or folders, websites, etc.
 */
-#NoEnv
 #NoTrayIcon
 #SingleInstance Force
 
@@ -30,8 +29,8 @@ Loop, Read, %RunFilePath%
 	}
 }
 
-Browser_Favorites & Numpad0::	; Zero
-Browser_Favorites & NumpadIns:: ; Works when NumLock is off
+^!Numpad0::	; Zero
+^!NumpadIns:: ; Works when NumLock is off
 modifier := 0
 dir := fileDir[modifier]
 SetWorkingDir, %dir%
