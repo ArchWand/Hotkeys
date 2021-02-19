@@ -31,11 +31,25 @@ If (ErrorLevel == 1) {
 	Return
 }
 SoundPlay *16
-MsgBox, 0x1111,, Quit !Script.ahk?
-ifMsgBox OK
+SetTimer, ChangeButtonNames, 50
+MsgBox, 0x1013,, Quit !Script.ahk?
+ifMsgBox YES
 {
 	WinClose, %A_ScriptDir%\star-run.ahk ahk_class AutoHotkey
 	ExitApp
 }
+ifMsgBox NO
+	Reload
 else
 	Return
+
+
+ChangeButtonNames: 
+IfWinNotExist, ahk_shortcuts.ahk
+	return  ; Keep waiting.
+SetTimer, ChangeButtonNames, Off 
+WinActivate 
+ControlSetText, Button1, Close (&x)
+ControlSetText, Button2, &Reload
+ControlSetText, Button3, Cancel
+return
