@@ -26,10 +26,13 @@ Copy some text to the clipboard, then press `ctrl`+`d` to paste it as emojis. Al
 When using `ctrl`+`d`, capital `A`, `B`, and `O` will cause the letters to be red.
 
 ### easy-menu
-Maps the `scroll lock` to the menu key/apps key (application key) for easier right clicking.
+Maps the `insert` key to the menu key/apps key (application key) for easier right clicking.
 
 ### f2-email
 Pressing `f2`+`1` or `f2`+`2` will paste in an email address. This can be changed by going into `f2-email.ahk` and changing the parts that contain my email address (either `robert.zhu@k12.wcsdny.org` or `robert.zhu06@gmail.com`) into your email address.
+
+### media_card.ahk
+Pressing the `launch media` key, if you have one, will cause the media card with the pause, skip, and volume controls to pop up.
 
 ### pin
 `Ctrl`+`Win`+`A` will toggle the always on top status of the active window. This means that clicking away won't hide it.
