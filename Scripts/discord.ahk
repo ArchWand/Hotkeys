@@ -1,6 +1,6 @@
 ﻿/*
 	Discord by Arcwand06
-	Version 1.0
+	Version 2.0
 	Code by DarkNinja2462
 	
 	Turns typed text into emojis or reactions on discord.
