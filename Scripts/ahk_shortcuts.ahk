@@ -12,12 +12,13 @@ DetectHiddenWindows, On
 
 SoundBeep ; signals start
 
-Run star-run.ahk
+Run file-run.ahk
 #Include calc.ahk
 #Include date&time.ahk
 #Include discord.ahk
 #Include easy-menu.ahk
 #Include f2-email.ahk
+#Include media_card.ahk
 #Include pin.ahk
 #Include visualToggle.ahk
 
@@ -30,19 +31,30 @@ If (ErrorLevel == 1) {
 	Return
 }
 SoundPlay *16
-MsgBox, 0x1111,, Quit !Script.ahk?
-ifMsgBox OK
+SetTimer, ChangeButtonNames, 50
+MsgBox, 0x1013,, Quit !Script.ahk?
+ifMsgBox YES
 {
 	WinClose, %A_ScriptDir%\file-run.ahk ahk_class AutoHotkey
 	ExitApp
 }
-<<<<<<< Updated upstream
-=======
 ifMsgBox NO
 {
 	WinClose, %A_ScriptDir%\file-run.ahk ahk_class AutoHotkey
 	Reload
 }
->>>>>>> Stashed changes
+ifMsgBox NO
+	Reload
 else
 	Return
+
+
+ChangeButtonNames: 
+IfWinNotExist, ahk_shortcuts.ahk
+	return  ; Keep waiting.
+SetTimer, ChangeButtonNames, Off 
+WinActivate 
+ControlSetText, Button1, Close (&x)
+ControlSetText, Button2, &Reload
+ControlSetText, Button3, Cancel
+return

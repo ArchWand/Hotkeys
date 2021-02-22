@@ -12,7 +12,7 @@ SendMode, Input
 
 ^d::
 	str := Clipboard
-	str := RegexReplace(str, "U)([a-zC-NP-Z])", ":regional_indicator_$L1: ")
+	str := RegexReplace(str, "U)([a-zC-NP-Z])", ":regional_indicator_$L1:​")
 	str := RegexReplace(str, "U)([AB])", ":$L1:")
 	str := RegexReplace(str, "U)O", ":o2:")
 	Clipboard := str

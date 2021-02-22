@@ -1,4 +1,7 @@
 # Changelog
+### 2.0.0 | 18 February 2021
+Made some keybinds play nicer with the Logitech Wireless K350 keyboard. Added `media_card.ahk` and an option to reload the script from the pause menu.
+
 ### 1.3.1 | 10 February 2021
 Fixed a bug where `calc.ahk` would look at other virtual desktops to check for open calculators.
 
