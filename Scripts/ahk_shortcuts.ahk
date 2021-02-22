@@ -35,8 +35,13 @@ SetTimer, ChangeButtonNames, 50
 MsgBox, 0x1013,, Quit !Script.ahk?
 ifMsgBox YES
 {
-	WinClose, %A_ScriptDir%\star-run.ahk ahk_class AutoHotkey
+	WinClose, %A_ScriptDir%\file-run.ahk ahk_class AutoHotkey
 	ExitApp
+}
+ifMsgBox NO
+{
+	WinClose, %A_ScriptDir%\file-run.ahk ahk_class AutoHotkey
+	Reload
 }
 ifMsgBox NO
 	Reload

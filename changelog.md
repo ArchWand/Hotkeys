@@ -1,4 +1,7 @@
 # Changelog
+### 2.0.1 | 22 February 2021
+Fixes bug where spamming the media card key would cause volume to increase.
+
 ### 2.0.0 | 18 February 2021
 Made some keybinds play nicer with the Logitech Wireless K350 keyboard. Added `media_card.ahk` and an option to reload the script from the pause menu.
 
