@@ -7,6 +7,6 @@
 
 *Launch_media::
 	SoundGet volume
-	SendInput {Volume_up}
+	SendInput {Volume_up}{Volume_down}
 	SoundSet volume
 Return
