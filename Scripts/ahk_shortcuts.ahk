@@ -33,8 +33,16 @@ SoundPlay *16
 MsgBox, 0x1111,, Quit !Script.ahk?
 ifMsgBox OK
 {
-	WinClose, %A_ScriptDir%\star-run.ahk ahk_class AutoHotkey
+	WinClose, %A_ScriptDir%\file-run.ahk ahk_class AutoHotkey
 	ExitApp
 }
+<<<<<<< Updated upstream
+=======
+ifMsgBox NO
+{
+	WinClose, %A_ScriptDir%\file-run.ahk ahk_class AutoHotkey
+	Reload
+}
+>>>>>>> Stashed changes
 else
 	Return

@@ -8,7 +8,7 @@
 #NoTrayIcon
 #SingleInstance Force
 
-RunFilePath := "C:\Users\bertz\Documents\​none\star-run.txt"
+RunFilePath := "C:\Users\bertz\Documents\None\file-run.txt"
 fileDir := {}
 modType := []
 files := []
