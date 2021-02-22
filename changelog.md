@@ -1,4 +1,9 @@
 # Changelog
+### 2.0.2 | 22 February 2021
+Maps the existing menu key to insert, so that it is still possible to use the insert key.
+
+Fixed documentation on `date&time.ahk`, `discord.ahk`.
+
 ### 2.0.1 | 22 February 2021
 Fixes bug where spamming the media card key would cause volume to increase.
 
