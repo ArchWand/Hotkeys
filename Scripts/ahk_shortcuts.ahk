@@ -43,8 +43,6 @@ ifMsgBox NO
 	WinClose, %A_ScriptDir%\file-run.ahk ahk_class AutoHotkey
 	Reload
 }
-ifMsgBox NO
-	Reload
 else
 	Return
 
