@@ -50,6 +50,9 @@ This makes it easy to switch between two google users.
 This will not work with more than two accounts. If you have more than two accounts signed in, it will only switch between the first two.  
 Incompatible with `star-run.ahk`.
 
+### sticky-keys
+Toggles sticky keys when you press `ctrl`+`shift`+`\`.
+
 ### visualToggle
 Adds a visual indicator for the `caps lock` key. This shows as a small box in the corner of the screen when caps lock is on.
 

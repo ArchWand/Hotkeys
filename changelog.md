@@ -1,4 +1,7 @@
 # Changelog
+### 2.1.0 | 26 February 2021
+Added `sticky-keys.ahk`.
+
 ### 2.0.2 | 22 February 2021
 Maps the existing menu key to insert, so that it is still possible to use the insert key.
 
