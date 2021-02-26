@@ -19,6 +19,7 @@ Run file-run.ahk
 #Include easy-menu.ahk
 #Include f2-email.ahk
 #Include media_card.ahk
+#Include sticky-keys.ahk
 #Include pin.ahk
 #Include visualToggle.ahk
 
