@@ -13,6 +13,10 @@ Goto, Paste
 email = robert.zhu06@gmail.com
 Goto, Paste
 
+~f2 & 3::
+email = arcwand06@gmail.com
+Goto, Paste
+
 Paste:
 	TempClip := ClipboardAll ; saves clipboard to temporary variable
 		Clipboard := email	; loads email
