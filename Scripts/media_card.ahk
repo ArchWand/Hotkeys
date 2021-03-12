@@ -1,13 +1,8 @@
 ﻿/*
 	Media_card by Arcwand06
-	Version 1.2
+	Version 1.3
 	
 	Pops up the media card when you press the launch media key.
 */
 
-*Launch_media::
-	SoundGet volume
-	Send {Volume_mute}{Volume_mute}
-	Sleep 50
-	SoundSet volume
-Return
+*Launch_media::Send {Volume_mute}{Volume_mute}
