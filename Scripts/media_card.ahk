@@ -7,7 +7,7 @@
 
 *Launch_media::
 	SoundGet volume
-	Send {Volume_up}{Volume_down}
+	Send {Volume_mute}{Volume_mute}
 	Sleep 50
 	SoundSet volume
 Return
