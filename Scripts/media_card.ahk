@@ -1,6 +1,6 @@
 ﻿/*
 	Media_card by Arcwand06
-	Version 1.1
+	Version 1.2
 	
 	Pops up the media card when you press the launch media key.
 */

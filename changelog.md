@@ -1,4 +1,7 @@
 # Changelog
+### 2.1.1 | 12 March 2021
+`media_card.ahk` no longer unmutes media when triggered.
+
 ### 2.1.0 | 26 February 2021
 Added `sticky-keys.ahk`.
 
