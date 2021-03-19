@@ -1,4 +1,7 @@
 # Changelog
+### 2.2.0 | 18 March 2021
+Added `zero-width.ahk`
+
 ### 2.1.1 | 12 March 2021
 `media_card.ahk` no longer unmutes media when triggered.
 

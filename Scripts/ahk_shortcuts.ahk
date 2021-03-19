@@ -22,6 +22,7 @@ Run file-run.ahk
 #Include sticky-keys.ahk
 #Include pin.ahk
 #Include visualToggle.ahk
+#Include zero-width.ahk
 
 
 ; End script 

@@ -56,4 +56,5 @@ Toggles sticky keys when you press `ctrl`+`shift`+`\`.
 ### visualToggle
 Adds a visual indicator for the `caps lock` key. This shows as a small box in the corner of the screen when caps lock is on.
 
-This is the only one that is not originally by me; however, future versions of this will be entirely by me.
+### zero-width
+Types a zero-width space when you press `right ctrl`+`right alt`+space. Also copies a zero-width space to the clipboard.
