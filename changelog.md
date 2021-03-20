@@ -1,4 +1,7 @@
 # Changelog
+### 2.2.1 | 20 March 2021
+`zero-width.ahk` no longer copies the zero-width space to the clipboard.
+
 ### 2.2.0 | 18 March 2021
 Added `zero-width.ahk`
 
