@@ -8,6 +8,7 @@
 SetWorkingDir %A_ScriptDir%
 SoundBeep
 
+~LButton::
 ~LWin Up::
 ~RWin Up::
 ~LCtrl Up::
