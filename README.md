@@ -36,6 +36,9 @@ Maps the `insert` key to the menu key/apps key (application key) for easier righ
 ### f2-email
 Pressing `f2`+`1` or `f2`+`2` will paste in an email address. This can be changed by going into `f2-email.ahk` and changing the parts that contain my email address (either `robert.zhu@k12.wcsdny.org` or `robert.zhu06@gmail.com`) into your email address.
 
+### fe_newFile
+When in the Windows 10 File Explorer, pressing `win` + `n` will create a new text file. This is done by sending deselect files, right click, w, and t.
+
 ### media_card.ahk
 Pressing the `launch media` key, if you have one, will cause the media card with the pause, skip, and volume controls to pop up.
 

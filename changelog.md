@@ -1,4 +1,7 @@
 # Changelog
+### Scripts 2.3.0 | 27 April 2021
+Added `fe_newFile.ahk`, which creates a hotkey for making files in Windows 10 file explorer.
+
 ### WinLog 1.0.0 | 01 April 2021
 Created winlog.ahk
 
