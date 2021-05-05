@@ -1,4 +1,7 @@
 # Changelog
+## Scripts 2.3.2 | 05 May 2021
+Bug fix in `fe_newFile.ahk` where the window specific hotkey was not enclosed properly, resulting in any hotkeys included after it to be totally unresponsive.
+
 ### Scripts 2.3.1 | 05 May 2021
 Fixed edge case bug where the shortcut key to create a new file in file explorer wouldn't work if the first item in the folder was selected, and then deselected, leaving the cursor on the first item.
 

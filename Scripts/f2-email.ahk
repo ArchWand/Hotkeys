@@ -8,14 +8,17 @@
 ~f2 & 1::
 email = robert.zhu@k12.wcsdny.org
 Goto, Paste
+Return
 
 ~f2 & 2::
 email = robert.zhu06@gmail.com
 Goto, Paste
+Return
 
 ~f2 & 3::
 email = arcwand06@gmail.com
 Goto, Paste
+Return
 
 Paste:
 	TempClip := ClipboardAll ; saves clipboard to temporary variable

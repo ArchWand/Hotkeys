@@ -4,7 +4,6 @@
 	
 	Pressing ctrl and alt and a particular numberpad key will run something as if from the command line, determined by a file. Commands to be run can include things like paths of files or folders, websites, etc.
 */
-#NoTrayIcon
 #SingleInstance Force
 
 RunFilePath := "C:\Users\bertz\Documents\None\file-run.txt"
@@ -35,6 +34,7 @@ modifier := 0
 dir := fileDir[modifier]
 SetWorkingDir, %dir%
 Goto, RunCmd
+Return
 
 
 RunCmd:

@@ -12,16 +12,15 @@ DetectHiddenWindows, On
 
 SoundBeep ; signals start
 
-Run file-run.ahk
 #Include calc.ahk
 #Include date&time.ahk
-#Include discord.ahk
 #Include easy-menu.ahk
 #Include f2-email.ahk
+#Include file-run.ahk
 #Include fe_newFile.ahk
 #Include media_card.ahk
-#Include sticky-keys.ahk
 #Include pin.ahk
+#Include sticky-keys.ahk
 #Include visualToggle.ahk
 #Include zero-width.ahk
 
@@ -38,12 +37,10 @@ SetTimer, ChangeButtonNames, 50
 MsgBox, 0x1013,, Quit !Script.ahk?
 ifMsgBox YES
 {
-	WinClose, %A_ScriptDir%\file-run.ahk ahk_class AutoHotkey
 	ExitApp
 }
 ifMsgBox NO
 {
-	WinClose, %A_ScriptDir%\file-run.ahk ahk_class AutoHotkey
 	Reload
 }
 else
@@ -58,4 +55,4 @@ WinActivate
 ControlSetText, Button1, Close (&x)
 ControlSetText, Button2, &Reload
 ControlSetText, Button3, Cancel
-return
+Return
