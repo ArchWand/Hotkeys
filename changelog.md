@@ -1,4 +1,7 @@
 # Changelog
+### Scripts 2.3.1 | 05 May 2021
+Fixed edge case bug where the shortcut key to create a new file in file explorer wouldn't work if the first item in the folder was selected, and then deselected, leaving the cursor on the first item.
+
 ### Scripts 2.3.0 | 27 April 2021
 Added `fe_newFile.ahk`, which creates a hotkey for making files in Windows 10 file explorer.
 
