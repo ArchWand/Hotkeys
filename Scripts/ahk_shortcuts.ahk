@@ -18,6 +18,7 @@ Run file-run.ahk
 #Include discord.ahk
 #Include easy-menu.ahk
 #Include f2-email.ahk
+#Include fe_newFile.ahk
 #Include media_card.ahk
 #Include sticky-keys.ahk
 #Include pin.ahk
