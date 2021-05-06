@@ -34,7 +34,6 @@ modifier := 0
 dir := fileDir[modifier]
 SetWorkingDir, %dir%
 Goto, RunCmd
-Return
 
 
 RunCmd:
@@ -44,6 +43,7 @@ RunCmd:
 	{ ; Opens the correct subject folder
 		run := files[input]
 		Run, %run%
+		MsgBox
 	} else if (ErrorLevel = "Timeout" || ErrorLevel = "Endkey:Enter")
 	{ ; opens main folder given conditions
 		Run, %A_WorkingDir%

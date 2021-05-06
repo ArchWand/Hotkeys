@@ -7,13 +7,13 @@
 #NoEnv
 #SingleInstance Force
 SendMode Input
-SetWorkingDir %A_ScriptDir%
 DetectHiddenWindows, On 
 
 SoundBeep ; signals start
 
 #Include calc.ahk
 #Include date&time.ahk
+#Include discord.ahk
 #Include easy-menu.ahk
 #Include f2-email.ahk
 #Include file-run.ahk
