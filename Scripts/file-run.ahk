@@ -1,10 +1,9 @@
 /*
-	Star-Run by Arcwand06
+	File-Run by Arcwand06
 	Version 2.0
 	
-	Pressing ctrl and alt and a particular numberpad key will run something as if from the command line, determined by a file. Commands to be run can include things like paths of files or folders, websites, etc.
+	Pressing ctrl and alt and a particular numberpad key will run something as if from the run prompt, determined by a file. Commands to be run can include things like paths of files or folders, websites, etc.
 */
-#SingleInstance Force
 
 RunFilePath := "C:\Users\bertz\Documents\None\file-run.txt"
 fileDir := {}
@@ -43,7 +42,6 @@ RunCmd:
 	{ ; Opens the correct subject folder
 		run := files[input]
 		Run, %run%
-		MsgBox
 	} else if (ErrorLevel = "Timeout" || ErrorLevel = "Endkey:Enter")
 	{ ; opens main folder given conditions
 		Run, %A_WorkingDir%
