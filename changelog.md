@@ -1,4 +1,8 @@
 # Changelog
+
+## Scripts 2.3.3 | 16 May 2021
+Quality of life change for the new file hotkey, resulting in the enitre name of the newly created file (including file extension) to be highlighted upon creation.
+
 ## Scripts 2.3.2 | 05 May 2021
 Bug fix in `fe_newFile.ahk` where the window specific hotkey was not enclosed properly, resulting in any hotkeys included after it to be totally unresponsive.
 
