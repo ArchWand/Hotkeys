@@ -1,4 +1,6 @@
 # Changelog
+## Scripts 2.4.0 | 19 May 2021
+Renamed `zero-width.ahk` to `invis-char.ahk` and added the ability to send invisible separators by using comma instead of space.
 
 ## Scripts 2.3.3 | 16 May 2021
 Quality of life change for the new file hotkey, resulting in the enitre name of the newly created file (including file extension) to be highlighted upon creation.
@@ -42,7 +44,7 @@ Made some keybinds play nicer with the Logitech Wireless K350 keyboard. Added `m
 Fixed a bug where `calc.ahk` would look at other virtual desktops to check for open calculators.
 
 ### Scripts 1.3.0 | 10 February 2021
-Added discord text keys, with code from @DarkNinja2462.
+Added discord text keys, with code from @DarkNinja2462#3141 <@358408384426409984>.
 
 ### Scripts 1.2.0 | 01 February 2021
 Added a hotkey for date and time. Uses standard spreadsheet hotkeys.

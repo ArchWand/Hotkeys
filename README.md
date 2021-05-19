@@ -39,6 +39,15 @@ Pressing `f2`+`1` or `f2`+`2` will paste in an email address. This can be change
 ### fe_newFile
 When in the Windows 10 File Explorer, pressing `win` + `n` will create a new text file. This is done by sending deselect files, right click, w, and t.
 
+### invis-char
+Enables the typing of invisible characters.
+
+| Character | Keyboard Shortcut |
+| :-------: | :---------------: |
+| `U+200B` Zero-width space | `Right ctrl` + `Right alt` + `space`|
+| `U+2063` Invisible separator | `Right ctrl` + `Right alt` + `,`|
+
+
 ### media_card.ahk
 Pressing the `launch media` key, if you have one, will cause the media card with the pause, skip, and volume controls to pop up.
 
@@ -63,6 +72,3 @@ Toggles sticky keys when you press `ctrl`+`shift`+`\`.
 
 ### visualToggle
 Adds a visual indicator for the `caps lock` key. This shows as a small box in the corner of the screen when caps lock is on.
-
-### zero-width
-Types a zero-width space when you press `right ctrl`+`right alt`+space.

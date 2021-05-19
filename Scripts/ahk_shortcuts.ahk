@@ -19,11 +19,11 @@ SoundBeep ; signals start
 #Include easy-menu.ahk
 #Include f2-email.ahk
 #Include fe_newFile.ahk
+#Include invis-char.ahk
 #Include media_card.ahk
 #Include pin.ahk
 #Include sticky-keys.ahk
 #Include visualToggle.ahk
-#Include zero-width.ahk
 
 
 ; End script 
