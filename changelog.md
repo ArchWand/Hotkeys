@@ -1,4 +1,8 @@
 # Changelog
+
+## Scripts 2.4.1 | 02 June 2021
+Fixed `calc.ahk` to work around a windows bug where it would think that there already was an instance of calculator open.
+
 ## Scripts 2.4.0 | 19 May 2021
 Renamed `zero-width.ahk` to `invis-char.ahk` and added the ability to send invisible separators by using comma instead of space.
 

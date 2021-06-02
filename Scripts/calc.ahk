@@ -1,6 +1,6 @@
 /*
 	Calc by Arcwand06
-	Version 1.0
+	Version 1.1
 	
 	# Modifies the behavior of the Windows calculator app.
 	
@@ -10,15 +10,13 @@
 	
 	When in the calculator app, ctrl+w will close it.
 */
-DetectHiddenWindows, Off
 
 Launch_App2::
-	if WinExist("Calculator")
-	{ ; tests if there is an open instance of calculator
-		WinActivate, Calculator
-	} else {
+	WinShow, Calculator
+	WinActivate, Calculator
+	WinGetActiveTitle, active
+	if (active != "Calculator")
 		Run calc
-	}
 Return 
 
 
