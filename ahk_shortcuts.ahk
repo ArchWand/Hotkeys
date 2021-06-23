@@ -16,14 +16,14 @@ SetWorkingDir %A_ScriptDir%
 SoundBeep ; signals start
 
 #Include %A_ScriptDir%\Scripts
-#Include hidden.ahk
-#Include file-run.ahk
 #Include calc.ahk
 #Include date&time.ahk
 #Include discord.ahk
 #Include easy-menu.ahk
 #Include f2-email.ahk
 #Include fe_newFile.ahk
+#Include file-run.ahk
+#Include hidden.ahk
 #Include invis-char.ahk
 #Include media_card.ahk
 #Include pin.ahk
