@@ -1,5 +1,5 @@
 ﻿/*
-	Invis-Char by Arcwand06
+	Invis-Char by ArcWandx86
 	Version 2.0
 	
 	Adds shortcuts to type invisible characters.

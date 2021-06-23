@@ -1,5 +1,5 @@
 /*
-	AHK Shortcuts by Arcwand06
+	AHK Shortcuts by ArcWandx86
 	Version 2.3.1
 	
 	Adds several shortcuts. Shortcuts are based on scripts in the same folder.

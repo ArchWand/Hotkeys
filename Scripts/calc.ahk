@@ -1,5 +1,5 @@
 /*
-	Calc by Arcwand06
+	Calc by ArcWandx86
 	Version 1.1
 	
 	# Modifies the behavior of the Windows calculator app.

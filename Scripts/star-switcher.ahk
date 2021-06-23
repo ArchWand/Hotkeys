@@ -1,5 +1,5 @@
 /*
-	Star-Switcher by Arcwand06
+	Star-Switcher by ArcWandx86
 	Version 1.0
 	
 	Pressing the star key in a browser, on a google page, causes the user to switch between 0 and 1.

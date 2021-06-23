@@ -1,5 +1,5 @@
 /*
-	Easy-Menu by Arcwand06
+	Easy-Menu by ArcWandx86
 	Version 1.2
 	
 	Maps the insert key to the menu key (application key) for easier right clicking.

@@ -1,5 +1,5 @@
 ﻿/*
-	Discord by Arcwand06
+	Discord by ArcWandx86
 	Version 2.0
 	Code by DarkNinja2462
 	

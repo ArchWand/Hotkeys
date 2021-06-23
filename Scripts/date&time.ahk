@@ -1,5 +1,5 @@
 ﻿/*
-	Date & Time by Arcwand06
+	Date & Time by ArcWandx86
 	Version 1.0
 	
 	Uses the same shortcuts as spreadsheets. Type the date with ctrl+;, and the time with ctrl+shift+;.

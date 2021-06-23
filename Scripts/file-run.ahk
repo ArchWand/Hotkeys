@@ -1,5 +1,5 @@
 /*
-	File-Run by Arcwand06
+	File-Run by ArcWandx86
 	Version 2.0
 	
 	Pressing ctrl and alt and a particular numberpad key will run something as if from the run prompt, determined by a file. Commands to be run can include things like paths of files or folders, websites, etc.

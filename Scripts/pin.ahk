@@ -1,5 +1,5 @@
 /*
-	Pin by Arcwand06
+	Pin by ArcWandx86
 	Version 1.0
 	
 	Ctrl+Win+A will toggle the always on top status of the active window.

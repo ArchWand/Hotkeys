@@ -1,5 +1,5 @@
 /*
-	F2-Email by Arcwand06
+	F2-Email by ArcWandx86
 	Version 1.0
 	
 	Pressing f2+1 or f2+2 will paste in an email.
