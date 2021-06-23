@@ -1,7 +1,6 @@
 ﻿/*
-	visualToggle by TuxRocks
-	Source: 
-	Version 1.0
+	visualToggle by ArcWandx86
+	Version 2.0
 	
 	Adds a visual indicator for the caps lock key.
 */
