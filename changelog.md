@@ -1,4 +1,12 @@
 # Changelog
+## Scripts 2.5.0 | 23 June 2021
+Created `hidden.ahk` to cycle the shown level of hidden files.
+
+Renamed all script descriptions with updated name.
+
+Fixed issue with `file-run.ahk`, where it would require the `#Include` command to be at the start. This was done by moving the initialization of the array into a function, which is then called every time the hotkey is triggered.
+
+Reorganized repository to contain all script modules in a single folder, with the main script outside.
 
 ## Scripts 2.4.1 | 02 June 2021
 Fixed `calc.ahk` to work around a windows bug where it would think that there already was an instance of calculator open.

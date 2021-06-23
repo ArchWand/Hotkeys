@@ -10,9 +10,6 @@ Made for Windows 10
 Download the files, and make sure you have AutoHotkey installed. If you installed as a .zip, you should extract it.  
 If you want this to run automatically at startup, right click the file in file explorer and select create shortcut. Press win+R to bring up the run prompt, and type `shell:startup`. Move the shortcut into there.
 
-## Window Logger
-This creates a log of all the windows that are open. It is triggered whenever any modifier keys (`ctrl`, `win`, `alt`) or `tab` is pressed.
-
 ## Scripts
 Make sure that all the .ahk files are in the same folder (they should be by default). Run `ahk_shortcuts.ahk` to activate. Double press `pause/break` to exit.
 
@@ -38,6 +35,9 @@ Pressing `f2`+`1` or `f2`+`2` will paste in an email address. This can be change
 
 ### fe_newFile
 When in the Windows 10 File Explorer, pressing `win` + `n` will create a new text file. This is done by sending deselect files, right click, w, and t.
+
+### hidden
+Cycle through the default, showing hidden files, and showing protected system files by pressing `alt` + `shift` + `.`. Note that this script reads the registry key each time, so you must wait for it to update before triggering it again. As such, spamming the hotkey may not work.
 
 ### invis-char
 Enables the typing of invisible characters.
@@ -72,3 +72,5 @@ Toggles sticky keys when you press `ctrl`+`shift`+`\`.
 
 ### visualToggle
 Adds a visual indicator for the `caps lock` key. This shows as a small box in the corner of the screen when caps lock is on.
+
+##
