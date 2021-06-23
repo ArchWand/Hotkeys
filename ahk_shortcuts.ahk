@@ -8,11 +8,16 @@
 #SingleInstance Force
 SendMode Input
 DetectHiddenWindows, On 
+SetWorkingDir %A_ScriptDir%
+
+#Include %A_MyDocuments%\Code\AutoHotkey\.libs
+#Include RefreshExplorer.ahk
 
 SoundBeep ; signals start
 
+#Include %A_ScriptDir%\Scripts
+#Include hidden.ahk
 #Include file-run.ahk
-
 #Include calc.ahk
 #Include date&time.ahk
 #Include discord.ahk
