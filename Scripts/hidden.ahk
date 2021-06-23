@@ -6,13 +6,17 @@
 	Switches between default, showing hidden, and showing protected system files.
 */
 
-!+.::
-RegRead, HiddenLevel, HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced, Hidden
-RegRead, SuperHidden, HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced, ShowSuperHidden
-if (SuperHidden)
-	HiddenLevel := 2
-HiddenLevel := Mod(HiddenLevel + 1, 3)
+CheckHiddenLevel()
+{
+	RegRead, HiddenLevel, HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced, Hidden
+	RegRead, SuperHidden, HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced, ShowSuperHidden
+	if (SuperHidden)
+		HiddenLevel := 2
+	return HiddenLevel
+}
 
+!+.::
+HiddenLevel := Mod(CheckHiddenLevel() + 1, 3)
 CoordMode, ToolTip, Client
 Switch HiddenLevel
 {
@@ -31,7 +35,7 @@ Switch HiddenLevel
 }
 if WinActive("ahk_exe Explorer.EXE")
 	SendInput {f5}
-SetTimer, HideToolTip, 3000
+SetTimer, HideToolTip, 1500
 Return
 
 HideToolTip:
