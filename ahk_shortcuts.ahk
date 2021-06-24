@@ -10,9 +10,6 @@ SendMode Input
 DetectHiddenWindows, On 
 SetWorkingDir %A_ScriptDir%
 
-#Include %A_MyDocuments%\Code\AutoHotkey\.libs
-#Include RefreshExplorer.ahk
-
 SoundBeep ; signals start
 
 #Include %A_ScriptDir%\Scripts
