@@ -3,12 +3,14 @@ This AutoHotKey script creates some custom keyboard shortcuts to make using my c
 This consists of any shortcuts I finds useful; if I think of any new ones to add, they'll get added.
 
 ### [AutoHotkey](https://www.autohotkey.com/) must be downloaded to run these scripts
-
 Made for Windows 10
 
 ## How to use
 Download the files, and make sure you have AutoHotkey installed. If you installed as a .zip, you should extract it.  
 If you want this to run automatically at startup, right click the file in file explorer and select create shortcut. Press win+R to bring up the run prompt, and type `shell:startup`. Move the shortcut into there.
+
+## Window Logger
+This creates a log of all the windows that are open. It is triggered whenever any modifier keys (`ctrl`, `win`, `alt`) or `tab` is pressed.
 
 ## Scripts
 Make sure that all the .ahk files are in the same folder (they should be by default). Run `ahk_shortcuts.ahk` to activate. Double press `pause/break` to exit.
