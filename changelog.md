@@ -1,4 +1,8 @@
 # Changelog
+
+## Scripts 2.6.1 | 01 July 2021
+Instead of inputting a sequence of keys, directly creates a text file in the open file explorer window.
+
 ## Scripts 2.5.0 | 23 June 2021
 Created `hidden.ahk` to cycle the shown level of hidden files.
 
