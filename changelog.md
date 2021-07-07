@@ -1,5 +1,11 @@
 # Changelog
 
+## Scripts 2.6.2 | 07 July 2021
+Changed `fe_newFile.ahk` to jump the selection to the new file after making it.
+### Fixes
+* Changed two lines of code to be a one-liner. Not sure why it was split into two lines; likely a fix for an error that is now resolved.
+* Sending input to jump to the file must be done after a certain delay. If it is done too quickly, the computer will crash.
+
 ## Scripts 2.6.1 | 01 July 2021
 Instead of inputting a sequence of keys, directly creates a text file in the open file explorer window.
 
