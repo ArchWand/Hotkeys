@@ -38,7 +38,7 @@ if (FileExist(newFile))
 }
 FileOpen(newFile, "a")
 SendInput {f5}
-Sleep 200
+Sleep 300
 SendInput NewFile%fileNum%
 Sleep 20
 SendInput {f2}
