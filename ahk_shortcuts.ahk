@@ -13,6 +13,9 @@ SetWorkingDir %A_ScriptDir%
 SoundBeep ; signals start
 
 ; Initialization code
+SetCapsLockState, Off
+width := A_ScreenWidth - 202
+height := A_ScreenHeight - 70
 HiddenLevel := CheckHiddenLevel()
 
 #Include %A_ScriptDir%\Scripts

@@ -5,9 +5,6 @@
 	
 	Adds a visual indicator for the caps lock key.
 */
-SetCapsLockState, Off
-width := A_ScreenWidth - 202
-height := A_ScreenHeight - 70
  
 ~*CapsLock::
 Sleep, 100
