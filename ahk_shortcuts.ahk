@@ -1,6 +1,6 @@
 /*
 	AHK Shortcuts by ArcWandx86
-	Version 2.3.1
+	Version 3.0.0
 	
 	Adds several shortcuts. Shortcuts are based on scripts in the same folder.
 */
@@ -11,6 +11,9 @@ DetectHiddenWindows, On
 SetWorkingDir %A_ScriptDir%
 
 SoundBeep ; signals start
+
+; Initialization code
+HiddenLevel := CheckHiddenLevel()
 
 #Include %A_ScriptDir%\Scripts
 #Include calc.ahk
