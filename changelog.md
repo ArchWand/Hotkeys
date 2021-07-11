@@ -1,4 +1,6 @@
 # Changelog
+## Scripts 3.0.0 | 11 July 2021
+Changed many scripts to use functions, and call from the library directory.
 
 ## Scripts 2.6.2 | 07 July 2021
 Changed `fe_newFile.ahk` to jump the selection to the new file after making it.
