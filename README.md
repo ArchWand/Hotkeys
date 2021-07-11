@@ -17,7 +17,6 @@ Make sure that all the .ahk files are in the same folder (they should be by defa
 
 ## List of Shortcuts
 ### calc
-***Modifies the behavior of the Windows calculator app.***  
 Pressing the `calculator` key (calc) on the keyboard will now first attempt to activate any existing instances of calculator, instead of creating a new instance.  
 `Ctrl`+`calc` creates a new instance of calculator, regardless of whether or not there are any already open.  
 When in the calculator app, `ctrl`+`w` will close it.  
@@ -33,21 +32,21 @@ When using `ctrl`+`d`, capital `A`, `B`, and `O` will cause the letters to be re
 Maps the `insert` key to the menu key/apps key (application key) for easier right clicking, and the menu key to `insert` so that applications that use the insert key are still useable.
 
 ### f2-email
-Pressing `f2`+`1` or `f2`+`2` will paste in an email address. This can be changed by going into `f2-email.ahk` and changing the parts that contain my email address (either `robert.zhu@k12.wcsdny.org` or `robert.zhu06@gmail.com`) into your email address.
+Pressing `f2`+`1` or `f2`+`2` will paste in an email address. This can be changed by going into `f2-email.ahk` and changing the parts that contain my email address into your email address.
 
 ### fe_newFile
-When in the Windows 10 File Explorer, pressing `win` + `n` will create a new text file. This is done by sending deselect files, right click, w, and t.
+When in the Windows 10 File Explorer, pressing `win`+`n` will create a new text file. This is done by directly creating a blank file in the open File Explorer directory, and navigating to it using key inputs.
 
 ### hidden
-Cycle through the default, showing hidden files, and showing protected system files by pressing `alt` + `shift` + `.`. Note that this script reads the registry key each time, so you must wait for it to update before triggering it again. As such, spamming the hotkey may not work.
+Cycle through showing the default, showing hidden files, and showing protected system files by pressing `alt`+`shift`+`.`.
 
 ### invis-char
 Enables the typing of invisible characters.
 
 | Character | Keyboard Shortcut |
 | :-------: | :---------------: |
-| `U+200B` Zero-width space | `Right ctrl` + `Right alt` + `space`|
-| `U+2063` Invisible separator | `Right ctrl` + `Right alt` + `,`|
+| `U+200B` Zero-width space | `Right ctrl`+`Right alt`+`space`|
+| `U+2063` Invisible separator | `Right ctrl`+`Right alt`+`,`|
 
 
 ### media_card.ahk
@@ -57,17 +56,14 @@ Pressing the `launch media` key, if you have one, will cause the media card with
 `Ctrl`+`Win`+`A` will toggle the always on top status of the active window. This means that clicking away won't hide it.
 
 ### star-run
-`Star`+`Numpad0`, followed by a number opens folders for school in file explorer. This is specific to my hard drive; you can modify it to suit your needs by changing the associated file.
+`Ctrl`+`Alt`+`Numpad0`, followed by a number, opens folders for school in file explorer. This is specific to my hard drive; you can modify it to suit your needs by changing the associated file.
 
-**NOTE:** Requires `Run` command. Incompatible with `star-switcher.ahk`.
-
-### star-switcher
+### star-switcher <sub>_Depracated_</sub>
 Pressing the star key (`bookmarks`) in a browser on a google page will switch to a different google user.  
 This makes it easy to switch between two google users.
 
 **NOTE:** this may not work as intended on certain google pages. Furthermore, this will not work on any other accounts — only google accounts.  
 This will not work with more than two accounts. If you have more than two accounts signed in, it will only switch between the first two.  
-Incompatible with `star-run.ahk`.
 
 ### sticky-keys
 Toggles sticky keys when you press `ctrl`+`shift`+`\`.
