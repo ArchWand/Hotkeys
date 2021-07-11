@@ -28,6 +28,7 @@
 	Sleep 500
 	
 	SendInput {f5}
+	Sleep 500
 	SendInput NewFile%fileNum%
 	Sleep 20
 	SendInput {f2}
