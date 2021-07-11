@@ -37,6 +37,9 @@ Pressing `f2`+`1` or `f2`+`2` will paste in an email address. This can be change
 ### fe_newFile
 When in the Windows 10 File Explorer, pressing `win`+`n` will create a new text file. This is done by directly creating a blank file in the open File Explorer directory, and navigating to it using key inputs.
 
+### file-run <sub>_down to update_</sub>
+`Ctrl`+`Alt`+`Numpad0`, followed by a number, opens folders for school in file explorer. This is specific to my hard drive; you can modify it to suit your needs by changing the associated file.
+
 ### hidden
 Cycle through showing the default, showing hidden files, and showing protected system files by pressing `alt`+`shift`+`.`.
 
@@ -54,9 +57,6 @@ Pressing the `launch media` key, if you have one, will cause the media card with
 
 ### pin
 `Ctrl`+`Win`+`A` will toggle the always on top status of the active window. This means that clicking away won't hide it.
-
-### star-run
-`Ctrl`+`Alt`+`Numpad0`, followed by a number, opens folders for school in file explorer. This is specific to my hard drive; you can modify it to suit your needs by changing the associated file.
 
 ### star-switcher <sub>_Depracated_</sub>
 Pressing the star key (`bookmarks`) in a browser on a google page will switch to a different google user.  
