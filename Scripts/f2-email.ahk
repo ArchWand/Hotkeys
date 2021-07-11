@@ -20,6 +20,11 @@ email = arcwand06@gmail.com
 Goto, Paste
 Return
 
+~f2 & 4::
+email = arcwandx86@gmail.com
+Goto, Paste
+Return
+
 Paste:
 	TempClip := ClipboardAll ; saves clipboard to temporary variable
 		Clipboard := email	; loads email
