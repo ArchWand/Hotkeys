@@ -1,35 +1,26 @@
 /*
 	F2-Email by ArcWandx86
-	Version 1.0
+	Version 2.0
 	
 	Pressing f2+1 or f2+2 will paste in an email.
 */
 
 ~f2 & 1::
-email = robert.zhu@k12.wcsdny.org
-Goto, Paste
+text = robert.zhu@k12.wcsdny.org
+Paste(text)
 Return
 
 ~f2 & 2::
-email = robert.zhu06@gmail.com
-Goto, Paste
+text = robert.zhu06@gmail.com
+Paste(text)
 Return
 
 ~f2 & 3::
-email = arcwand06@gmail.com
-Goto, Paste
+text = arcwand06@gmail.com
+Paste(text)
 Return
 
 ~f2 & 4::
-email = arcwandx86@gmail.com
-Goto, Paste
-Return
-
-Paste:
-	TempClip := ClipboardAll ; saves clipboard to temporary variable
-		Clipboard := email	; loads email
-		Send ^v				; pastes email
-		  Sleep 100 		; ensure that email has been pasted
-	Clipboard := TempClip 	; restore clipboard
-	TempClip := "" 			; wipe temp variable
+text = arcwandx86@gmail.com
+Paste(text)
 Return
