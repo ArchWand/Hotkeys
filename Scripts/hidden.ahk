@@ -13,8 +13,8 @@ SetHiddenLevel(HiddenLevel)
 if WinActive("ahk_exe Explorer.EXE")
 	SendInput {f5}
 SetTimer, HideToolTip, 1500
-Return
+return
 
 HideToolTip:
 ToolTip
-Return
+return

@@ -8,7 +8,7 @@
 Browser_Favorites::
 	; check if in a browser
 	if !(WinActive("ahk_exe chrome.exe") || WinActive("ahk_exe firefox.exe") || WinActive("ahk_exe iexplore.exe") || WinActive("ahk_exe msedge.exe"))
-		Return
+		return
 	; Clipboard replacement
 	TempClip := ClipboardAll ; saves clipboard to temporary variable
 		PreviousClip := Clipboard
@@ -17,7 +17,7 @@ Browser_Favorites::
 		SendInput ^c
 		  Sleep 100
 		if PreviousClip = Clipboard ; check that copying was successful
-			Return
+			return
 		
 		; process what to do with the string
 		if InStr(Clipboard, ".google.com") {
@@ -34,7 +34,7 @@ Browser_Favorites::
 			} else if InStr(Clipboard, "docs.google.com") {
 				InputBox, SwitchTo, Star Switcher, Enter the user to switch to.,,240,148,,,,7,0
 				if (ErrorLevel = 1 || ErrorLevel = 2)
-					Return
+					return
 				Clipboard := StrReplace(Clipboard, "/d/", "/u/" . SwitchTo . "/d/")
 			}
 		SendInput ^v
@@ -45,4 +45,4 @@ Browser_Favorites::
 	; restores former clipboard
 	Clipboard := TempClip
 	TempClip := ""
-Return
+return

@@ -22,4 +22,4 @@ log := FileOpen(logFile, 2)
 WinGetActiveTitle, Title
 log.WriteLine(Title . Format(" ({}:{}:{}) ({} {} {})", A_Hour, A_Min, A_Sec, A_DD, A_MMM, A_YYYY))
 log.Close()
-Return
+return

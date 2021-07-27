@@ -38,7 +38,7 @@ Pause::
 KeyWait, Pause, U
 KeyWait, Pause, D, T0.2
 If (ErrorLevel == 1) {
-	Return
+	return
 }
 SoundPlay *16
 SetTimer, ChangeButtonNames, 50
@@ -52,7 +52,7 @@ ifMsgBox NO
 	Reload
 }
 else
-	Return
+	return
 
 
 ChangeButtonNames: 
@@ -63,4 +63,4 @@ WinActivate
 ControlSetText, Button1, Close (&x)
 ControlSetText, Button2, &Reload
 ControlSetText, Button3, Cancel
-Return
+return

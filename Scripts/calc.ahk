@@ -17,7 +17,7 @@ Launch_App2::
 	WinGetActiveTitle, active
 	if (active != "Calculator")
 		Run calc
-Return 
+return 
 
 
 ; Pressing ctrl and the calc key creates a new calc.
