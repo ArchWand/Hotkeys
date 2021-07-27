@@ -38,7 +38,7 @@ Pause::
 KeyWait, Pause, U
 KeyWait, Pause, D, T0.2
 If (ErrorLevel == 1) {
-	return
+	Return
 }
 SoundPlay *16
 SetTimer, ChangeButtonNames, 50
@@ -52,15 +52,15 @@ ifMsgBox NO
 	Reload
 }
 else
-	return
+	Return
 
 
 ChangeButtonNames: 
 IfWinNotExist, ahk_shortcuts.ahk
-	return  ; Keep waiting.
+	Return  ; Keep waiting.
 SetTimer, ChangeButtonNames, Off 
 WinActivate 
 ControlSetText, Button1, Close (&x)
 ControlSetText, Button2, &Reload
 ControlSetText, Button3, Cancel
-return
+Return

@@ -17,7 +17,7 @@ SendMode, Input
 	str := RegexReplace(str, "U)O", ":o2:")
 	Clipboard := str
 	Send ^v
-return
+Return
 
 ^t::
 str := ""
@@ -104,6 +104,6 @@ str := ""
 		Send, +=:%emoji%:{Enter}
 		Sleep, 150
 	}
-return
+Return
 
 #IfWinActive

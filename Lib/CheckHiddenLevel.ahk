@@ -11,5 +11,5 @@ CheckHiddenLevel()
 	RegRead, SuperHidden, HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced, ShowSuperHidden
 	if (SuperHidden)
 		HiddenLevel := 2
-	return HiddenLevel
+	Return HiddenLevel
 }

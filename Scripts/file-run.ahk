@@ -28,4 +28,4 @@ RunCmd:
 	{ ; passes keys through
 		SendInput %input%
 	}
-return
+Return

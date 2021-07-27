@@ -32,6 +32,6 @@
 	SendInput NewFile%fileNum%
 	Sleep 20
 	SendInput {f2}
-return
+Return
 
 #IfWinActive

@@ -14,4 +14,4 @@ if GetKeyState("CapsLock", "T") {
 } else {
 	Progress, off
 }
-return
+Return

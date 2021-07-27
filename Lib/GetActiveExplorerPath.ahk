@@ -2,7 +2,7 @@
 	GetActiveExplorerPath by [AlexV](https://www.autohotkey.com/boards/viewtopic.php?t=69925)
 	Version 1.0
 	
-	returns the path of the active File Explorer window.
+	Returns the path of the active File Explorer window.
 */
 
 GetActiveExplorerPath()
@@ -14,7 +14,7 @@ GetActiveExplorerPath()
 		{
 			if (window.hwnd==explorerHwnd)
 			{
-				return window.Document.Folder.Self.Path
+				Return window.Document.Folder.Self.Path
 			}
 		}
 	}

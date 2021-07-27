@@ -8,19 +8,19 @@
 ~f2 & 1::
 text = robert.zhu@k12.wcsdny.org
 Paste(text)
-return
+Return
 
 ~f2 & 2::
 text = robert.zhu06@gmail.com
 Paste(text)
-return
+Return
 
 ~f2 & 3::
 text = arcwand06@gmail.com
 Paste(text)
-return
+Return
 
 ~f2 & 4::
 text = arcwandx86@gmail.com
 Paste(text)
-return
+Return
