@@ -5,12 +5,13 @@
 	Pastes a given text, without affecting the clipboard.
 */
 
-Paste(text)
+Paste(string)
 {
 	TempClip := ClipboardAll ; saves clipboard to temporary variable
-		Clipboard := text	; loads email
+		Clipboard := string	; loads email
+		Sleep 50 			; ensure that clipboard is set
 		Send ^v				; pastes email
-		  Sleep 100 		; ensure that email has been pasted
+		  Sleep 50 		; ensure that email has been pasted
 	Clipboard := TempClip 	; restore clipboard
 	TempClip := "" 			; wipe temp variable
 }

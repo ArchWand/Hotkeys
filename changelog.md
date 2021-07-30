@@ -1,4 +1,8 @@
 # Changelog
+
+## Scripts 3.0.1 | 30 July 2021
+The new file hotkey is now binded to `ctrl`+`q`, since using the windows key proved problematic — what I thought was a crash was, in reality, the hotkey typing `L` while the windows key was pressed, thus locking the computer. The new binding avoids this issue.
+
 ## Scripts 3.0.0 | 11 July 2021
 Changed many scripts to use functions, and call from the library directory.
 

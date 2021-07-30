@@ -1,23 +1,21 @@
 /*
 	File Explorer New File by ArcWandx86
-	Version 3.0
+	Version 3.1
 	
 	Create a new file in the active file explorer folder with `win` + `n`.
 */
 
 #IfWinActive ahk_exe Explorer.EXE
 
-#n::
+^q::
 	explorer := GetActiveExplorerPath()
 	newFile=%explorer%\NewFile.txt
 	
-	if (FileExist(newFile))
-	{
+	if (FileExist(newFile)) {
 		Loop
 		{
 			newFile=%explorer%\NewFile%A_Index%.txt
-			if (!FileExist(newFile))
-			{
+			if (!FileExist(newFile)) {
 				fileNum := A_Index
 				break
 			}
@@ -25,13 +23,11 @@
 	}
 	
 	FileOpen(newFile, "a")
-	Sleep 500
-	
 	SendInput {f5}
-	Sleep 500
+	
+	KeyWait LWin
+	KeyWait RWin
 	SendInput NewFile%fileNum%
-	Sleep 20
-	SendInput {f2}
 Return
 
 #IfWinActive

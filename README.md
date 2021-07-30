@@ -35,7 +35,7 @@ Maps the `insert` key to the menu key/apps key (application key) for easier righ
 Pressing `f2`+`1` or `f2`+`2` will paste in an email address. This can be changed by going into `f2-email.ahk` and changing the parts that contain my email address into your email address.
 
 ### fe_newFile
-When in the Windows 10 File Explorer, pressing `win`+`n` will create a new text file. This is done by directly creating a blank file in the open File Explorer directory, and navigating to it using key inputs.
+When in the Windows 10 File Explorer, pressing `ctrl`+`q` will create a new text file. This is done by directly creating a blank file in the open File Explorer directory, and navigating to it using key inputs.
 
 ### file-run <sub>_down to update_</sub>
 `Ctrl`+`Alt`+`Numpad0`, followed by a number, opens folders for school in file explorer. This is specific to my hard drive; you can modify it to suit your needs by changing the associated file.
