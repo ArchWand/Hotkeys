@@ -38,6 +38,7 @@ Pause::
 KeyWait, Pause, U
 KeyWait, Pause, D, T0.2
 If (ErrorLevel == 1) {
+	SendInput {Pause}
 	Return
 }
 SoundPlay *16
