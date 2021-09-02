@@ -1,4 +1,6 @@
 # Changelog
+## Scripts 3.0.2 | 02 September 2021
+Trigger the media card pop-up upon key release instead, so that it only sends once.
 
 ## Scripts 3.0.1 | 30 July 2021
 The new file hotkey is now binded to `ctrl`+`q`, since using the windows key proved problematic — what I thought was a crash was, in reality, the hotkey typing `L` while the windows key was pressed, thus locking the computer. The new binding avoids this issue.

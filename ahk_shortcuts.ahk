@@ -1,6 +1,6 @@
 /*
 	AHK Shortcuts by ArcWandx86
-	Version 3.0.0
+	Version 3.0.2
 	
 	Adds several shortcuts. Shortcuts are based on scripts in the same folder.
 */

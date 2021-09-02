@@ -53,7 +53,7 @@ Enables the typing of invisible characters.
 
 
 ### media_card.ahk
-Pressing the `launch media` key, if you have one, will cause the media card with the pause, skip, and volume controls to pop up.
+Pressing the `launch media` key, if you have one, will cause the media card with the pause, skip, and volume controls to pop up. Triggers upon key release.
 
 ### pin
 `Ctrl`+`Win`+`A` will toggle the always on top status of the active window. This means that clicking away won't hide it.
