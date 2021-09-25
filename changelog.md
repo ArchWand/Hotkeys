@@ -1,4 +1,8 @@
 # Changelog
+
+## Scripts 3.0.3 | 23 September 2021
+Removed discord.ahk, due to it being too niche.
+
 ## Scripts 3.0.2 | 02 September 2021
 Trigger the media card pop-up upon key release instead, so that it only sends once.
 

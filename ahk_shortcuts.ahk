@@ -1,6 +1,6 @@
 /*
 	AHK Shortcuts by ArcWandx86
-	Version 3.0.2
+	Version 3.0.3
 	
 	Adds several shortcuts. Shortcuts are based on scripts in the same folder.
 */
@@ -21,7 +21,6 @@ HiddenLevel := CheckHiddenLevel()
 #Include %A_ScriptDir%\Scripts
 #Include calc.ahk
 #Include date&time.ahk
-#Include discord.ahk
 #Include easy-menu.ahk
 #Include f2-email.ahk
 #Include fe_newFile.ahk
