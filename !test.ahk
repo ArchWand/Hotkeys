@@ -4,7 +4,8 @@ SetWorkingDir %A_ScriptDir%
 Menu, Tray, Icon, C:\WINDOWS\System32\SHELL32.dll, 85
 VarFile=%UserProfile%\Documents\Code\Autohotkey\.data\test.var
 
-Hotkeys := ["f10"]
+Hotkeys := ["f10", "WheelDown"]
+AssignHotkeyLabels()
 
 FileReadLine, HotkeysStates, %VarFile%, 1
 HotkeysStates := SubStr(HotkeysStates, 1, Hotkeys.Length())
@@ -14,19 +15,21 @@ while (StrLen(HotkeysStates) < Hotkeys.Length()) {
 SetHotkeysState(HotkeysStates)
 
 Gosub, CreateTestSettingsGUI
+SetKeyDelay 100
 Return
 
 
+WheelDown::Click
 
 f10::
-SoundBeep
+SetTimer, Timer, % (timer := !timer) ? "5000" : "Off"
 Return
-
-
 
 ; SetTimer, Timer, % (timer := !timer) ? "1000" : "Off"
 Timer:
-Click
+SendInput y{!}fish{Enter}
+SendInput y{!}mine{Enter}
+SendInput y{!}chop{Enter}
 Return
 
 
@@ -35,8 +38,8 @@ Return
 
 
 
-
-
+AssignHotkeyLabels() {
+}
 
 SetHotkeysState(HotkeysStates) {
 	global Hotkeys
@@ -91,7 +94,7 @@ Return
 TestSettingsButtonEditHotkeys:
 	GuiControlGet, EditingHotkeys,, EditHotkeys
 	if (Substr(EditingHotkeys, 1, 4) == "Edit") {
-		GuiControl,, EditHotkeys, &Stop Editing
+		GuiControl,, EditHotkeys, &Save
 		GuiControl, Enable, Hotkey1
 		GuiControl, Enable, Hotkey2
 	} else {
@@ -108,10 +111,12 @@ Return
 
 TestSettingsGuiEscape:
 TestSettingsButtonReload:
+	Gui, TestSettings:Hide
 	Reload
 Return
 
 TestSettingsButtonStop(x):
 	SoundPlay *48
+	Gui, TestSettings:Hide
 	ExitApp
 Return
